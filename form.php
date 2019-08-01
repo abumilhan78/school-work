@@ -25,7 +25,10 @@
 
 if (isset($_POST['submit']))
 {
+   echo "Your Name is : ";
    echo $_POST['nama'];
+   echo "<br><br>";
+   echo "your school is : "
    echo $_POST['sekolah'];
 }
 
