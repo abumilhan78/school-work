@@ -8,28 +8,23 @@
 </head>
 <body>
     <a href="about.php">About Page</a>
-    <form action="#" method = "POST">
-        <label>Input Your Name : </label>
-        <input type="text" name = "nama">
-        <br>
-        <label>Input Your School : </label>
-        <input type="text" name="sekolah">
-        <br>
-        <input type="button" value="submit">
-    </form>
+    <FORM ACTION="form.php" METHOD="POST" NAME="input">
+        input your name : <input type="text" name="nama"><br>
+        input your school : <input type="text" name="sekolah"><br>
+        <input type="submit" name="Input" value="Input">
+    </FORM>
 </body>
 </html>
 
 
 <?php
 
-if (isset($_POST['submit']))
-{
-   echo "Your Name is : ";
-   echo $_POST['nama'];
-   echo "<br><br>";
-   echo "your school is : "
-   echo $_POST['sekolah'];
-}
+if (isset($_POST['Input'])) {
+    $name = $_POST['nama'];
+    $school = $_POST['sekolah'];
+    echo "Your Name : <b>$name</b>";
+    echo "<br><br>";
+    echo "Your School : <b><i>$school</i></b>";
+    }
 
 ?>
