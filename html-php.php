@@ -14,7 +14,9 @@
             echo "<h$i>Hello World!!</h$i>";
         }
         $a = array (23,34,23,45,56);
+        
     ?>
+    <br><br>
     <font>
         <?php
         $arrWarna = array ("Blue","Purple","Red","Yellow","Green");
