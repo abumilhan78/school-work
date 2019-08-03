@@ -15,3 +15,10 @@ for($i=0; $i < 2; $i++){
             echo $angkabaru[$i][$j];
       }
 }
+echo "<br><br>";
+//example.2
+$b = 'jack';
+$d = [4,5,6200,'dude',200,0,434,45,$b,543,785,'dodol'];
+for ($i=0; $i < count($d); $i++) { 
+    echo 'inddex array ke-'. $i . " Dengan isi data " .$d[$i]. '<br>';
+}
