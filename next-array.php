@@ -9,5 +9,5 @@ for ($i=4; $i >= 0 ; $i--) {
 //Associative Key Array
 $asso =['name'=>'Milhan','age'=>16,'adress'=>'Bandung'];
 foreach ($asso as $key => $value) {
-    echo $key . " : " . $value;
+    echo $key . " : " . $value . "<br>";
 }
