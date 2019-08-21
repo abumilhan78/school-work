@@ -6,7 +6,7 @@ echo "Condition : ($x==$y) || ($x>$y)";
 echo "<hr>Output : ";
 
 if (($x==$y) || ($x>$y)) {
-    echo "Привет мир(Hello World)";
+    echo "Hello PHP - (Привет мир)";
 }else {
-    echo "Неверный ввод(Wrong Condition)";
+    echo "Wrong Condition - (Неверный ввод)";
 }
