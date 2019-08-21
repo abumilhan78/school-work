@@ -12,6 +12,7 @@
         input your name : <input type="text" name="nama" required><br><br>
         input your school : <input type="text" name="sekolah" required><br>
         Change Text Color : <input type="color" name="warna" required><br>
+        <input type="range" name="dude" id=""><br>
         <input type="submit" name="Input" value="Input">
     </FORM>
 </body>
@@ -24,6 +25,8 @@ if (isset($_POST['Input'])) {
     $color = $_POST['warna'];
     $name = $_POST['nama'];
     $school = $_POST['sekolah'];
+    $range = $_POST['dude'];
+    echo "$range<br>";
     echo "<style>
             *{
                 color : $color;
