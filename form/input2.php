@@ -9,8 +9,8 @@
 <body>
     <form action="output2.php" method="post">
         <h2>Login Here...</h2>
-        Username : <input type="text" name="username"><br>
-        Password : <input type="password" name="password"><br>
+        Username : <input type="text" name="username" required><br>
+        Password : <input type="password" name="password" required><br>
         <input type="submit" name="Login" value="Login">
         <input type="reset" name="reset" value="Reset">
     </form>
