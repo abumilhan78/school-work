@@ -14,6 +14,7 @@
     <title>Document</title>
 </head>
 <body>
+    <fieldset style="width=50%; position=absolute; left=25%; top=25%; bottom=25%;">
     <form action="outdaft.php" method="post">
         <div class="form-group">No Pendaftaran <input type="text" name="daft" class="form-control"></div><br>
         <div class="form-group">NISN           <input type="number" name="nisn" class="form-control"></div><br>
@@ -46,5 +47,6 @@
                       <div class="form-group"> <input type="submit" value="kirim" name="simpan" class="btn btn-success"></div>
                        <div class="form-group"> <input type="reset" value="reset" class="btn btn-failed"></div>
     </form>
+    </fieldset>
 </body>
 </html>
