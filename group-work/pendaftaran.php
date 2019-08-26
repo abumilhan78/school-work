@@ -46,65 +46,65 @@
     </header>
     
     <fieldset class="container">
-        <form action="output-kwitansi.php" method="post" class="align-content-center">
+        <form action="output-pendaftar.php" method="post" class="align-content-center">
             <div class="form-row">
             <div class="form-group col-md-8">
                 <label>NISN</label>
-                <input type="number" class="form-control" placeholder="Nomor Induk Siswa Nasional">
+                <input type="number" class="form-control" name="nisn" placeholder="Nomor Induk Siswa Nasional">
             </div>
             <div class="form-group col-md-4">
                 <label>NIK</label>
-                <input type="number" class="form-control" name="" placeholder="Nomor Induk Kependudukan">
+                <input type="number" class="form-control" name="nik" placeholder="Nomor Induk Kependudukan">
             </div>
             </div>
             <div class="form-group">
                 <label>Nama Lengkap</label>
-                <input type="text" name="" class="form-control">
+                <input type="text" name="nama" class="form-control">
             </div>
             <div class="form-row">
             <div class="form-group col-md-5">
                 <label>Tempat/Tanggal Lahir</label>
-                <input type="text" name="" class="form-control" placeholder="Tempat">
+                <input type="text" name="tempat" class="form-control" placeholder="Tempat">
             </div>
             <div class="input-group-addon">
                 <span class="glyphicon glyphicon-th"></span>
             </div>
             <div class="form-group col-md-5 date">
-                <input type="date" name="" class="form-control datepicker selector" placeholder="Tanggal Lahir">
+                <input type="date" name="tgl" class="form-control datepicker selector" placeholder="Tanggal Lahir">
             </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>Nama Ayah</label>
-                    <input type="text" name="" class="form-control" placeholder="Nama Ayah">
+                    <input type="text" name="ayah" class="form-control" placeholder="Nama Ayah">
                 </div>
                 <div class="form-group col-md-6">
                     <label>Nama Ibu</label>
-                    <input type="text" name="" class="form-control" placeholder="Nama Ibu">
+                    <input type="text" name="ibu" class="form-control" placeholder="Nama Ibu">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-5">
                     <label>Pekerjaan Ayah</label>
-                    <input type="text" name="" class="form-control" placeholder="Pekerjaan Ayah">
+                    <input type="text" name="p_ayah" class="form-control" placeholder="Pekerjaan Ayah">
                 </div>
                 <div class="form-group col-md-5">
                     <label>Pekerjaan Ibu</label>
-                    <input type="text" name="" class="form-control" placeholder="Pekerjaan Ibu">
+                    <input type="text" name="p_ibu" class="form-control" placeholder="Pekerjaan Ibu">
                 </div>
             </div>
             <div class="form-row">
             <div class="form-group col-md-6">
                 <label>Asal Sekolah</label>
-                <input type="text" name="" class="form-control" placeholder="Asal Sekolah">
+                <input type="text" name="asal" class="form-control" placeholder="Asal Sekolah">
             </div>
             <div class="form-group col-md-6">
                 <label>Nomor Telepon</label>
-                <input type="number" name="" class="form-control" placeholder="Nomor Telepon">
+                <input type="number" name="nomor" class="form-control" placeholder="Nomor Telepon">
             </div>
             </div>
             <div class="form-group">
-                <input type="submit" value="Kirim" class="btn btn-primary btn-block">
+                <input type="submit" value="Kirim" class="btn btn-primary btn-block" name="send">
             </div>
         </form>
     </fieldset>

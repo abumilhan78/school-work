@@ -39,9 +39,62 @@
     <fieldset class="container">
         <form action="output-kwitansi.php" method="post" class="align-content-center">
             <div class="form-group col-md-8">
-                <label>Nama Lengkap</label>
-                <input type="text" class="form-control" placeholder="Nama Lengkap">
+                <label>Nama Kasir</label>
+                <input type="text" class="form-control" placeholder="Nama Kasir">
             </div>
+                
+                <div class="custom-control custom-checkbox">
+                <label style="position:auto;">Barang Yang Dibeli</label>
+                <input type="text" readonly class="form-control-plaintext blockquote-footer" value="Centang Barang Yang Akan Dibeli">
+                    <input type="checkbox" class="custom-control-input" id="check1">
+                    <label class="custom-control-label" for="check1">Mijon</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="check2">
+                    <label class="custom-control-label" for="check2">IndoNoodle</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="check3">
+                    <label class="custom-control-label" for="check3">bengkuadrat</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="check4">
+                    <label class="custom-control-label" for="check4">akua</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="check5">
+                    <label class="custom-control-label" for="check5">susu cap berduit</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="check6">
+                    <label class="custom-control-label" for="check6">teh thai</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="check7">
+                    <label class="custom-control-label" for="check7">es genggam</label>
+                </div>
+                &nbsp;&nbsp;&nbsp;
+                <div class="form-group col-md-6">
+                    <label>Pelanggan</label>
+                    <select class="custom-select custom-select-md mb-3">
+                        <option selected>Umum</option>
+                        <option value="1">Member</option>
+                        <option value="2">Eksekutif</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                <div class="form-group">
+                    <label>Kartu Yang Tersedia</label>&nbsp; &nbsp;
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="kartu"  value="Laki-laki">
+                    <label class="form-check-label">Visa</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="kartu"  value="Perempuan">
+                    <label class="form-check-label">BRI</label>
+                    </div>
+                </div>
         </form>
     </fieldset>
 
