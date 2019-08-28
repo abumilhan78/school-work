@@ -75,7 +75,8 @@
                 }else{
                     $jam_lembur = 0;
                 }
-                $total = $gajab+$t_anak+$t_istri-$asuransi;
+                
+                $total = $gajab+$t_anak-$asuransi;
                 echo "Nama Anda : <h1>$nama</h1><br>";
                 echo "Divisi : <b>$jabat</b>";
                 echo "<hr>";
