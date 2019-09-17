@@ -1,3 +1,7 @@
+<?php
+session_start();
+if (isset($_SESSION['login'])) {
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,3 +40,10 @@
     </fieldset>
 </body>
 </html>
+<?php
+} else {
+    // Redirect(pindah halaman)
+    // ke login.php
+    header("location: login.php");
+    die("Silahkan Login Terlebih dahulu");
+} ?>
