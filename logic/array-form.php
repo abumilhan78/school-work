@@ -42,8 +42,8 @@ if (isset($_SESSION['login'])) {
 </html>
 <?php
 } else {
-    // Redirect(pindah halaman)
-    // ke login.php
-    header("location: login.php");
-    die("Silahkan Login Terlebih dahulu");
+//session belum ada artinya belum login
+// die ("Anda belum login! Anda tidak berhak masuk ke halaman
+// ini.Silahkan login <a href='session0.php'>di sini</a>");
+header("Location: login.php");
 } ?>
