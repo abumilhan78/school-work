@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (isset($_SESSION['login'])) {
+    # code...
+
 if (isset($_POST['smpn'])) {
     $a = $_POST['bil'];
     $b = $_POST['pangkat'];
@@ -19,5 +23,11 @@ if (isset($_POST['smpn'])) {
         }
         echo "<hr>";
     }
+}
+}else {
+    // Redirect(pindah halaman)
+    // ke login.php
+    header("location: login.php");
+    die("Silahkan Login Terlebih dahulu");
 }
 ?>
