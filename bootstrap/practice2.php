@@ -1,3 +1,9 @@
+<?php 
+    session_start();
+    if (isset($_SESSION['login'])) {
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +24,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="practice.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Pendaftaran</a>
+        <a class="nav-link" href="practice2.php">Pendaftaran</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Another</a>
@@ -178,3 +184,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
+    <?php }else{
+        header("location:login.php");
+    } 
+    ?>
