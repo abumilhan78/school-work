@@ -30,7 +30,7 @@
         <a class="nav-link" href="practice2.php">Pendaftaran</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Another</a>
+        <a class="nav-link" href="logout.php">Log-Out</a>
       </li>
       
     </ul>

@@ -6,10 +6,7 @@
         if ($user == "potter" && $pass = "123") {
             //menciptakan session
             $_SESSION['login'] = $user;
-            echo "<h1>Anda berhasil LOGIN</h1>";
-echo "<h2>Klik <a href='practice.php'>di sini
-(session02.php)</a>
-untuk menuju ke halaman pemeriksaan session";
+            header("location:practice.php");
         }
     }
         else{
@@ -30,7 +27,7 @@ untuk menuju ke halaman pemeriksaan session";
     
     <div class="container jumbotron-fluid col-md-7">
     <p class="p-lg-7 text-lg-center text-info"><b>Mohon Login Terlebih Dahulu</b></p>
-    <form action="practice.php" method="post" class="align-content-center">
+    <form action="" method="post" class="align-content-center">
         <div class="form-group">
         <label>Username</label>
         <input type="text" name="user" class="form-control" placeholder="Username...">
