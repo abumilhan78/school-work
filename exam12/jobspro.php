@@ -1,4 +1,5 @@
 <?php 
+session_start();
 if (isset($_SESSION['log'])) {
 if (isset($_POST['send'])) {
     $nama = $_POST['nama'];
