@@ -20,6 +20,8 @@
             $ngarang = $_POST['ngar'];
             $jenis = $_POST['jenis'];
             $harga = $_POST['hrg'];
+
+            
         }
     ?>
     <header>
@@ -108,9 +110,12 @@
                         </tr>
                         <?php } ?>
                     </table>
-                    <center><h5>Total Pembayaran</h5></center>
-                    <hr class="bg-white">
-                    <b>Sub Total</b><p align="right"><?php  ?></p>
+                    <table class="table table-hover">
+                    <tr>
+                        <td>Total Pembayaran</td>
+                        <td><?php echo array_sum($harga); ?></td>
+                    </tr>
+                    </table>
                 </div>
             </div>           
         </div>
