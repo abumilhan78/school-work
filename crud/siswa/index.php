@@ -34,7 +34,7 @@ $db = new Database();
             <td><?php echo $data['alamat']; ?></td>
             <td><a href="show.php?id=<?php echo $data['id']; ?>&aksi=show">Show</a></td>
             <td><a href="edit.php?id=<?php echo $data['id']; ?>&aksi=edit">Edit</a></td>
-            <td><a href="proses.php?id=<?php echo $data['id']; ?>&aksi=delete" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?');">Delete</a></td>
+            <td><a href="proses.php?id=<?php echo $data['id']; ?>&aksi=delete" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?');ALTER TABLE nama_tabel_lama RENAME TO nama_tabel_baru;">Delete</a></td>
         </tr>
         <?php }?>
     </table>
